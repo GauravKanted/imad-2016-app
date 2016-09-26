@@ -9,7 +9,7 @@ function moveRight() {
 }
 moveimg.onClick= function (){
 //    moveimg.style.marginLeft = '100px' ;
-  var interval = setInterval(moveRight,100)  
+  var interval = setInterval(moveRight,100); 
 };
 
 mtext.innerHTML = 'New Values!';
