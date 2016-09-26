@@ -5,8 +5,8 @@ var moveimg = document.getElementById('madi');
 var marginLeft=0;
 
 moveimg.onClick= function (){
-    moveimg.style.marginLeft = "100px" ;
-  //var interval = setInterval(moveRight,100); 
+   // moveimg.style.marginLeft = "100px" ;
+    var interval = setInterval(moveRight,100); 
 };
 
 function moveRight() {
