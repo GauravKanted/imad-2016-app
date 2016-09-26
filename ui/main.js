@@ -7,4 +7,4 @@ moveimg.onClick= function (){
     
 };
 
-element.innerHTML = 'New Values!';
+mtext.innerHTML = 'New Values!';
