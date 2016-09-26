@@ -4,13 +4,14 @@ var moveimg = document.getElementById('madi');
 
 var marginLeft=0;
 
+moveimg.onClick= function (){
+    moveimg.style.marginLeft = "100px" ;
+  //var interval = setInterval(moveRight,100); 
+};
+
 function moveRight() {
     marginLeft = marginLeft+10;
     moveimg.style.marginLeft= marginLeft + "px";
 }
-moveimg.onClick= function (){
-    moveimg.style.marginLeft = "100 px" ;
-  //var interval = setInterval(moveRight,100); 
-};
 
 mtext.innerHTML = 'New Values!';
