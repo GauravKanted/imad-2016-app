@@ -5,8 +5,9 @@ mtext.innerHTML = 'New Values!';
 var marginLeft=0;
 
 var moveimg = document.getElementById('madi');
-moveimg.onClick= function (){
-    moveimg.style.marginLeft = "100px" ;
+
+moveimg.onClick = function () {
+    moveimg.style.marginLeft = '100px';
     var interval = setInterval(moveRight,100); 
 };
 
