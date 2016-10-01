@@ -23,7 +23,7 @@ var name = nameInput.Value;
 var submit = document.getElementById("submitb");
 submit.onclick = fucntion () {
 
-var names = ['name1','name2','name3'];
+var names = ['name1','name2','name3','name4'];
 var list = '';
 for( i=o;i<names.length;i++)
 {
