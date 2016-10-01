@@ -18,12 +18,12 @@ button.onclick = function() {
     request.send(null);
 };
 
-var nameInput =  document.getElementById("name");
-var name = nameInput.Value;
+
 var submit = document.getElementById("submitb");
 
 submit.onclick = function () {
-    
+    var nameInput =  document.getElementById("name");
+    var name = nameInput.Value;
     var request = new XMLHttpRequest();
    
     request.onreadystatechange = function () 
