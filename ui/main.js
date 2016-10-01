@@ -5,14 +5,13 @@ button.onclick = function() {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () 
     {
-        if(request.readyState == XHttpRequest.DONE)
-        { if(request.status == 200)
-         { var counter= request.responseText;
-          var span = document.getElementById('count');
-          span.innerHTML = counter.toString(); 
+        if(request.readyState == XHttpRequest.DONE) {
+            if(request.status == 200) { 
+            var counter= request.responseText;
+            var span = document.getElementById('count');
+            span.innerHTML = counter.toString(); 
          }
-        
-    }
+      }
     };
     
     request.open('GET','http://gauravkanted.imad.hasura-app.io/counter', true);
