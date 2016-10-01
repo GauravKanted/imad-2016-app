@@ -7,7 +7,7 @@ var moveimg = document.getElementById('madi');
 var marginLeft = 0;
 
 function moveRight() {
-    marginLeft = marginLeft + 1;
+    marginLeft = marginLeft + 5;
     moveimg.style.marginLeft = marginLeft + 'px';
 }
 
