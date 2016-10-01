@@ -12,7 +12,7 @@ function moveRight() {
 }
 
 moveimg.onclick = function () {
-    marginLeft = "100px";
+    moveimg.style.marginLeft = "100px";
     //var interval = setInterval(moveRight, 100); 
 };
 
