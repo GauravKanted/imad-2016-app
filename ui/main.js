@@ -1,23 +1,25 @@
-console.log('Loaded!');
-var mtext = document.getElementById('main-text');
-
-mtext.innerHTML = 'New Values Loaded!';
-
-var moveimg = document.getElementById('madi');
-var marginLeft = 0;
-
-function moveRight() {
-    marginLeft = marginLeft + 5;
-    moveimg.style.marginLeft = marginLeft + 'px';
-}
-
-moveimg.onclick = function () {
-    var interval = setInterval(moveRight, 100); 
-};
-var counter=0;
+//var counter=0;
 var button = document.getElementById('counter');
+
 button.onclick = function() {
-    counter = counter + 1;
+    
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function () 
+    {
+        if(request.readyState === XHttpRequest.DONE)
+        { if(request.status === 200)
+         { var counter= request.responseText;
+          var span = document.getElementById('count');
+          span.innerHTML = counter.toString(); 
+         }
+        
+    }
+    };
+    
+    request.open('GET','http://gauravkanted.imad.hasura-app.io/counter', true);
+    request.send(null);
+    
+    /*counter = counter + 1;
     var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    span.innerHTML = counter.toString();*/
 };
