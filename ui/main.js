@@ -3,7 +3,7 @@ var mtext = document.getElementById('main-text');
 
 mtext.innerHTML = 'New Values Loaded!';
 
-var moveimg = document.getElementById('madico');
+var moveimg = document.getElementById('madi');
 var marginLeft = 0;
 
 function moveRight() {
@@ -11,9 +11,7 @@ function moveRight() {
     moveimg.style.marginLeft= marginLeft + 'px';
 }
 
-
 moveimg.onClick = function () {
-    moveimg.style.marginLeft = '100px';
     var interval = setInterval(moveRight, 100); 
 };
 
