@@ -42,7 +42,8 @@ var request = new XMLHttpRequest();
     {
         if(request.readyState === XMLHttpRequest.DONE) {
             if(request.status === 200) { 
-                            var names = ['name1','name2','name3','name4'];
+                var names = request.responseText;
+                name = JSON.parse(names);
                 var list = '';
                 for( i=0;i<names.length;i++)
                 {
@@ -57,6 +58,4 @@ var request = new XMLHttpRequest();
     
     request.open('GET','http://gauravkanted.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
-
-
 };
