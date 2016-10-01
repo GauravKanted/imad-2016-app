@@ -22,8 +22,7 @@ button.onclick = function() {
 var submit = document.getElementById("submitb");
 
 submit.onclick = function () {
-    var nameInput =  document.getElementById("name");
-    var name = nameInput.Value;
+    
     var request = new XMLHttpRequest();
    
     request.onreadystatechange = function () 
@@ -43,7 +42,8 @@ submit.onclick = function () {
          }
       }
     };
-    
+    var nameInput =  document.getElementById("name");
+    var name = nameInput.Value;
     request.open('GET','http://gauravkanted.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 };
