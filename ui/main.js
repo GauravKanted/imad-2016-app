@@ -55,7 +55,7 @@ var request = new XMLHttpRequest();
       }
     };
     
-    request.open('GET','http://gauravkanted.imad.hasura-app.io/submit-name', true);
+    request.open('GET','http://gauravkanted.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);
 
 
