@@ -438,12 +438,12 @@ app.get('/js/my-blog.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/js', 'my-blog.js'));
 });
 
-app.get('/vendor/bootstrap/css/bootstrap.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/css', 'bootstrap.css'));
+app.get('/ui/css/bootstrap.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css', 'bootstrap.css'));
 });
 
-app.get('/vendor/bootstrap/js/bootstrap.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/js', 'bootstrap.js'));
+app.get('/uijs/bootstrap.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', 'bootstrap.js'));
 });
 
 app.get('/vendor/font-awesome/css/font-awesome.css', function (req, res) {
