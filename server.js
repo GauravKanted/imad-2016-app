@@ -442,11 +442,11 @@ app.get('/ui/css/bootstrap.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/css', 'bootstrap.css'));
 });
 
-app.get('/uijs/bootstrap.js', function (req, res) {
+app.get('/ui/js/bootstrap.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/js', 'bootstrap.js'));
 });
 
-app.get('/vendor/font-awesome/css/font-awesome.css', function (req, res) {
+app.get('/ui/font/font-awesome.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/css', 'font-awesome.css'));
 });
 
