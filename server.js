@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user : 'aniketaditya',
-    database : 'aniketaditya',
+    user : 'gauravkanted',
+    database : 'gauravkanted',
     host : 'db.imad.hasura-app.io',
     port : '5432',
     password : process.env.DB_PASSWORD
@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/ui'));
 app.use(bodyParser.json());
 
 app.use(session({
-    secret: 'someRandomSecretValue',
+    secret: 'superSecretString',
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
 
@@ -135,7 +135,7 @@ function createTemplate (data) {
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
                         <li>
-                            <a href="https://twitter.com/aniket_aditya">
+                            <a href="https://twitter.com/gauravkanted">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -143,7 +143,7 @@ function createTemplate (data) {
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/aniket.aditya">
+                            <a href="https://www.facebook.com/gauravkanted97">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -159,7 +159,7 @@ function createTemplate (data) {
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Aniket Aditya 2016</p>
+                    <p class="copyright text-muted">Copyright &copy; Gaurav Kanted 2016</p>
                 </div>
             </div>
         </div>
