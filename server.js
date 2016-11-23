@@ -220,7 +220,7 @@ app.get('/articles/:articleName', function (req, res) {
         if (result.rows.length === 0) {
             res.status(404).send('Article not found');
         } else {
-            var articleData = result.rows[0];
+           //ar articleData = result.rows[0];
             res.send(createTemplate(articleData));
         }
     }
@@ -229,6 +229,12 @@ app.get('/articles/:articleName', function (req, res) {
 
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
+});
+app.get('/ui/js/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/js', req.params.fileName));
+});
+app.get('/ui/css/:fileName', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/css', req.params.fileName));
 });
 
 
