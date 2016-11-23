@@ -486,23 +486,15 @@ app.get('/img/web_security.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui/img', 'web_security'));
 });
 
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts/', 'glyphicons-halflings.ttf'));
+app.get('/fonts/LobsterTwo-Italic.ttf', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/fonts' , 'LobsterTwo-Italic.ttf'));
 });
 
-app.get('/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/bootstrap/fonts/', 'glyphicons-halflings.svg'));
-});
-
-app.get('/vendor/font-awesome/fonts/fontawesome-webfont.ttf', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.ttf'));
-});
-
-app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff'));
+app.get('/fonts/LobsterTwo-Regular.ttf', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui/fonts' , 'LobsterTwo-Regular.ttf'));
 });
   app.get('/vendor/font-awesome/fonts/fontawesome-webfont.woff2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui/vendor/font-awesome/fonts' , 'fontawesome-webfont.woff2'));
+  res.sendFile(path.join(__dirname, 'ui/fonts' , 'OpenSans-Regular.ttf'));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
