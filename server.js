@@ -7,8 +7,8 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 var config = {
-    user: 'gaurakanted',
-    database: 'gaurakanted',
+    user: 'gauravkanted',
+    database: 'gauaravkanted',
     host: 'db.imad.hasura-app.io',
     port: '5432',
     password: process.env.DB_PASSWORD
@@ -80,13 +80,13 @@ function hash (input, salt) {
 
 
 app.get('/hash/:input', function(req, res) {
-   var hashedString = hash(req.params.input, 'this-is-some-random-string');
+   var hashedString = hash(req.params.input, 'super-secret-string');
    res.send(hashedString);
 });
 
 app.post('/create-user', function (req, res) {
    // username, password
-   // {"username": "gaurav", "password": "password"}
+   // {"username": "tanmai", "password": "password"}
    // JSON
    var username = req.body.username;
    var password = req.body.password;
@@ -220,7 +220,7 @@ app.get('/articles/:articleName', function (req, res) {
         if (result.rows.length === 0) {
             res.status(404).send('Article not found');
         } else {
-           //ar articleData = result.rows[0];
+            var articleData = result.rows[0];
             res.send(createTemplate(articleData));
         }
     }
@@ -230,7 +230,6 @@ app.get('/articles/:articleName', function (req, res) {
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
-
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
