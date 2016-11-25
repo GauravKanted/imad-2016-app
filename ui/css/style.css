@@ -34,12 +34,12 @@ body a:hover{
 /*-- //banner-body --*/
 /*-- header --*/
 .navbar-default {
-  background:none !important;
-  border-color:none !important;
+  background:none 
+  border-color:none; 
 }
 a.navbar-brand {
   font-size: 3em;
-  color:#c34c21 !important;
+  color:#c34c21 ;
   text-decoration: none;
   font-family:LobsterTwo-Regular;
 }
@@ -112,29 +112,29 @@ a.navbar-brand:hover {
 	width: 34px;
 }
 .header-bottom-top ul li a.fb:hover{
-	background: url(../images/img-sp.png) no-repeat -97px -12px;
+	background: url(images/img-sp.png) no-repeat -97px -12px;
 	display: block;
 }
 
 .header-bottom-top ul li a.lin{
-	background: url(../images/img-sp.png) no-repeat -26px -152px;
+	background: url(images/img-sp.png) no-repeat -26px -152px;
 	display: block;
 	height: 34px;
 	width: 34px;
 }
 .header-bottom-top ul li a.lin:hover{
-	background: url(../images/img-sp.png) no-repeat -96px -152px;
+	background: url(images/img-sp.png) no-repeat -96px -152px;
 	display: block;
 }
 
 .header-bottom-top ul li a.gh{
-	background: url(../images/gh.png);
+	background: url(images/gh.png);
 	display: block;
 	height: 34px;
 	width: 34px;
 }
 .header-bottom-top ul li a.gh:hover{
-	background: url(../images/ghh.png);
+	background: url(images/ghh.png);
 	display: block;
 }
 
