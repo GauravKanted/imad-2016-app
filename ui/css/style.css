@@ -5,15 +5,15 @@ html, body{
 }
 @font-face{
    font-family:LobsterTwo-Regular;
-	 src: url(../fonts/LobsterTwo-Regular.ttf) format('truetype');
+	 src: url(fonts/LobsterTwo-Regular.ttf) format('truetype');
 }
 @font-face{
    font-family:OpenSans-Regular;
-	 src: url(../fonts/OpenSans-Regular.ttf) format('truetype');
+	 src: url(fonts/OpenSans-Regular.ttf) format('truetype');
 }
 @font-face{
    font-family:LobsterTwo-Italic;
-	 src: url(../fonts/LobsterTwo-Italic.ttf) format('truetype');
+	 src: url(fonts/LobsterTwo-Italic.ttf) format('truetype');
 }
 p{
 	margin:0;
@@ -28,7 +28,7 @@ body a:hover{
 /*-- banner-body --*/
 .banner-body{
 	padding:6em 0 0;
-	background:url(../images/pattern.jpg) 0px 0px;
+	background:url(images/pattern.jpg) 0px 0px;
 	min-height:600px;
 }
 /*-- //banner-body --*/
