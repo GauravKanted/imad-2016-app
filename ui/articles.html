@@ -11,6 +11,9 @@
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Bootstrap CSS file for article page -->
+		<link href="css/abootstrap.min.css" rel="stylesheet" />
+
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
 <!-- //js -->
@@ -64,64 +67,153 @@
 						</div><!-- /.navbar-collapse -->
 					</nav>
 				</div>
-	
-			<!-- search-scripts -->
-			<script src="js/classie.js"></script>
-			<script src="js/uisearch.js"></script>
-				<script>
-					new UISearch( document.getElementById( 'sb-search' ) );
-				</script>
-			<!-- //search-scripts -->
+
+		<!-- Body -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<article>
+						<h1><a href="index.html">Power from the Air</a></h1>
+
+				        <div class="row">
+				          	<div class="col-sm-6 col-md-6">
+				          		<span class="glyphicon glyphicon-folder-open"></span> &nbsp;
+				          		<a href="index.html">Posts</a>
+				          	</div>
+				          	<div class="col-sm-6 col-md-6">
+				          	&nbsp;&nbsp;
+				          	<span class="glyphicon glyphicon-time"></span> August 24, 2013 9:00 PM			        		
+				          	</div>
+				          </div>
+
+				          <hr>
+
+				          <img src="images/pfa.png" class="img-responsive">
+
+				          <br />
+
+				          <p class="lead">
+				          Even the smallest Internet-connected devices typically need a battery or power cord. Not for much longer. Technology that lets gadgets work and communicate using only energy harvested from nearby TV, radio, cell-phone, or Wi-Fi signals is headed toward commercialization. The University of Washington researchers who developed the technique have demonstrated Internet-connected temperature and motion sensors, and even a camera, powered that way.
+				          </p>
+
+				          <p class="lead">
+				          Transferring power wirelessly is not a new trick. But getting a device without a conventional power source to communicate is harder, because generating radio signals is very power-intensive and the airwaves harvested from radio, TV, and other telecommunication technologies hold little energy.
+				          </p>
+
+						<p class="lead">
+							Weak radio signals can indeed provide all an Internet gadget needs, using a principle called backscattering. Instead of generating original signals, one of their devices selectively reflects incoming radio waves to construct a new signal. A gadget using the technique absorbs some energy from the signal it is modifying to power its own circuits.
+							RFID chips for the contactless smart cards used in mass transit also rely on backscattering, but they require specialized reader devices and can communicate only within a few inches because the reflected signals are weak and the reader itself presents interference.
+						</p>
+
+						<p class="lead">
+							One version of the University of Washington technology, dubbed passive Wi-Fi, is being commercialized through a spin-off company, Jeeva Wireless. It lets battery-free gadgets connect with conventional devices such as computers and smartphones by backscattering Wi-Fi signals. Doing that requires altering the software of a Wi-Fi access point to generate an extra signal for passive Wi-Fi devices to use, very slightly increasing its power consumption.
+						</p>
+
+						<p class= "lead">
+							Passive Wi-Fi consumes just 1/10,000th as much power as existing Wi-Fi chipsets. It uses a thousandth as much power as the Bluetooth LE and ZigBee communications standards used by some small connected devices and has a longer range. A device using passive Wi-Fi to communicate—for example, a security camera—could power its other circuits using energy harvested from the Wi-Fi signals it is backscattering, or by feeding on other signals such as TV and radio broadcasts.
+						</p>
+
+						<p class="lead">
+							The researchers believe that tiny passive Wi-Fi devices could be extremely cheap to make, perhaps less than a dollar. In tomorrow’s smart home, security cameras, temperature sensors, and smoke alarms should never need to have their batteries changed.
+						</p>
+				          <hr>
+					</article>				
+
+					<ul class="pager">
+						<li class="previous"><a href="index.html">&larr; Back to posts</a></li>
+					</ul>	
+
+					<!-- Comment form -->
+					<div class="well">
+						<h4>Leave a comment</h4>
+						<form role="form" class="clearfix">
+						  <div class="col-md-6 form-group">
+						    <label class="sr-only" for="name">Name</label>
+						    <input type="text" class="form-control" id="name" placeholder="Name">
+						  </div>
+						  <div class="col-md-6 form-group">
+						    <label class="sr-only" for="email">Email</label>
+						    <input type="email" class="form-control" id="email" placeholder="Email">
+						  </div>
+						  <div class="col-md-12 form-group">
+						    <label class="sr-only" for="email">Comment</label>
+						    <textarea class="form-control" id="comment" placeholder="Comment"></textarea>
+						  </div>
+						  <div class="col-md-12 form-group text-right">
+						  	<button type="submit" class="btn btn-primary">Submit</button>
+						  </div>
+						</form>					
+					</div>
+
+					<hr />
+
+					<ul id="comments" class="comments">
+						<li class="comment">
+							<div class="clearfix">
+								<h4 class="pull-left">John</h4>
+								<p class="pull-right">9:41 PM on August 24, 2013</p>
+							</div>
+							<p>
+								<em>I don't believe in astrology but still your writing style is really great!</em>
+							</p>
+						</li>
+
+						
+					</ul>
+				</div>
+				<div class="col-md-4">
+					<!-- Categories -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Categories</h4>
+						</div>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="#">Gadgets</a></li>
+							<li class="list-group-item"><a href="#">Softwares</a></li>
+							<li class="list-group-item"><a href="#">Future Tech</a></li>
+							<li class="list-group-item"><a href="#">Upcoming Tech</a></li>
+						</ul>
+					</div>
+
+					<!-- Tags -->
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4>Tags</h4>
+						</div>
+						<div class="panel-body">
+							<ul class="list-inline">
+								<li><a href="#">IoT</a></li>
+								<li><a href="#">Android</a></li>
+								<li><a href="#">Software</a></li>
+								<li><a href="#">AR/VR</a></li>
+								<li><a href="#">DIY's</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- Bootstrap Script file -->
+		<script src="lib/jquery-2.0.3.min.js"></script>
+		<script src="lib/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+
+			
 			</div>
 <!-- //header -->
-<!-- pages -->
-			<div class="pages">
-				<div class="headdings">
-					<h3 class="ghj">Blog Posts</h3>
-						<div class="bs-example">
-							<table class="table">
-							  <tbody>
-								<tr>
-								  <td><h1 id="h1.-bootstrap-heading">h1. Bootstrap heading<a class="anchorjs-link" href="#h1.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h1></td>
-								  <td class="type-info">Semibold 36px</td>
-								</tr>
-								<tr>
-								  <td><h2 id="h2.-bootstrap-heading">h2. Bootstrap heading<a class="anchorjs-link" href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h2></td>
-								  <td class="type-info">Semibold 30px</td>
-								</tr>
-								<tr>
-								  <td><h3 id="h3.-bootstrap-heading">h3. Bootstrap heading<a class="anchorjs-link" href="#h3.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h3></td>
-								  <td class="type-info">Semibold 24px</td>
-								</tr>
-								<tr>
-								  <td><h4 id="h4.-bootstrap-heading">h4. Bootstrap heading<a class="anchorjs-link" href="#h4.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h4></td>
-								  <td class="type-info">Semibold 18px</td>
-								</tr>
-								<tr>
-								  <td><h5 id="h5.-bootstrap-heading">h5. Bootstrap heading<a class="anchorjs-link" href="#h5.-bootstrap-heading"><span class="anchorjs-icon"></span></a></h5></td>
-								  <td class="type-info">Semibold 14px</td>
-								</tr>
-								<tr>
-								  <td><h6>h6. Bootstrap heading</h6></td>
-								  <td class="type-info">Semibold 12px</td>
-								</tr>
-							  </tbody>
-							</table>
-						</div>
-				</div>
-				</div>
-			</div>
-<!-- //pages -->
 		</div>
 	</div>
 <!-- footer -->
 <div class="footer-bottom">
 		<div class="container">
-			<p>� 2016 Gaurav Kanted|All rights reserved  </p> <!--Design by <a href="http://w3layouts.com/"> W3layouts</a>-->
+			<p>© 2016 Gaurav Kanted|All rights reserved  </p> <!--Design by <a href="http://w3layouts.com/"> W3layouts</a>-->
 		</div>
 	</div>
 <!-- //footer -->
-<!-- for bootstrap working -->
+<!-- Bootstrap Script Files -->
 <script src="js/bootstrap.js"> </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/abootstrap.min.js"></script>
 </body>
 </html>
