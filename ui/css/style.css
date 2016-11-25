@@ -28,18 +28,18 @@ body a:hover{
 /*-- banner-body --*/
 .banner-body{
 	padding:6em 0 0;
-	background:url(images/pattern.jpg) 0px 0px;
+	background:url(../images/pattern.jpg) 0px 0px;
 	min-height:600px;
 }
 /*-- //banner-body --*/
 /*-- header --*/
 .navbar-default {
-  background:none 
-  border-color:none; 
+  background:none !important;
+  border-color:none !important;
 }
 a.navbar-brand {
   font-size: 3em;
-  color:#c34c21 ;
+  color:#c34c21 !important;
   text-decoration: none;
   font-family:LobsterTwo-Regular;
 }
@@ -128,13 +128,13 @@ a.navbar-brand:hover {
 }
 
 .header-bottom-top ul li a.gh{
-	background: url(images/gh.png);
+	background: url(../images/gh.png);
 	display: block;
 	height: 34px;
 	width: 34px;
 }
 .header-bottom-top ul li a.gh:hover{
-	background: url(images/ghh.png);
+	background: url(../images/ghh.png);
 	display: block;
 }
 
