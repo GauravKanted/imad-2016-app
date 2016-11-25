@@ -60,26 +60,6 @@
 	transition: all 0.4s ease-in-out 0.2s;
 }
 
-.ch-img-1 { 
-	background-image: url(../images/17.jpg);
-}
-
-.ch-img-2 { 
-	background-image: url(../images/16.jpg);
-}
-
-.ch-img-3 { 
-	background-image: url(../images/15.jpg);
-}
-.ch-img-4 { 
-	background-image: url(../images/18.jpg);
-}
-.ch-img-5 { 
-	background-image: url(../images/19.jpg);
-}
-.ch-img-6{ 
-	background-image: url(../images/20.jpg);
-}
 .ch-info h3 {
 	color: #fff;
 	text-transform: uppercase;
