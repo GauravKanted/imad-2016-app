@@ -2174,23 +2174,11 @@ p.lom{
 	.tab_list1 {
 	  width: 48%;
 	}
-	.newsletter input[type="text"] {
-	  padding: 7px 10px;
-	  font-size: 13px;
-	}
-	.newsletter input[type="submit"] {
-	  padding: 5px 0px;
-	  font-size: 13px;
-	  margin: 0 0 0.5em 8.7em;
-	}
 	.four-fig1:nth-child(1) {
 	  margin-right: 0.5em;
 	}
 	.four-fig1 {
 	  margin-bottom: 1em;
-	}
-	.newsletter {
-	  margin: 1em 0;
 	}
 	.four-fig1:nth-child(3) {
 	  margin-right: 0.5em;
@@ -2236,10 +2224,6 @@ p.lom{
 	.about-text h3 {
 	  padding:1.5em 0 0.5em;
 	  font-size: 22px;
-	}
-	.portfolio h3 {
-	  padding: 1.5em 0 0;
-	  margin: 0 0 0 1.5em;
 	}
 	.about-info h4 {
 	  font-size: 13px;
